@@ -1,0 +1,10 @@
+[Unit]
+Description=sshguard Mail Notifications
+After=sshguard.service
+
+[Service]
+ExecStart=/usr/local/bin/sshguard-notify.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
